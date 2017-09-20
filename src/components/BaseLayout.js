@@ -7,7 +7,7 @@ export default class BaseLayout extends React.Component {
     return (
       <div>
         <Navbar color="faded" light toggleable>
-          <Link to="/"><NavbarBrand>reactstrap</NavbarBrand></Link>
+          <Link to="/"><NavbarBrand>Splash Page</NavbarBrand></Link>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <Link to="/home"><NavLink>Home</NavLink></Link>
