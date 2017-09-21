@@ -1,22 +1,28 @@
 import React from 'react';
-import {Navbar, Nav, NavbarBrand, NavItem, NavLink} from 'reactstrap';
-import {Link} from 'react-router-dom';
+import {Navbar, Nav, NavbarBrand, NavItem} from 'reactstrap';
+import {NavLink} from 'react-router-dom';
 
 export default class BaseLayout extends React.Component {
   render() {
     return (
       <div>
         <Navbar color="faded" light toggleable>
-          <Link to="/"><NavbarBrand>Splash Page</NavbarBrand></Link>
+          <NavLink exact to="/" activeStyle={{color: "black"}}><NavbarBrand>Splash Page</NavbarBrand></NavLink>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link to="/home"><NavLink>Home</NavLink></Link>
+                <NavLink activeClassName="selected" to="/home">Home</NavLink>
               </NavItem>
               <NavItem>
-                <Link to="/about"><NavLink>About</NavLink></Link>
+                <NavLink activeClassName="selected" to="/about">About</NavLink>
               </NavItem>
               <NavItem>
-                <Link to="/portfolio"><NavLink>Portfolio</NavLink></Link>
+                <NavLink activeClassName="selected" to="/portfolio">Portfolio</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink activeClassName="selected" to="/contact">Contact</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink activeClassName="selected" to="/references">References</NavLink>
               </NavItem>
             </Nav>
         </Navbar>

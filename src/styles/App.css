@@ -1,3 +1,13 @@
+a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.selected {
+  color: black;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
